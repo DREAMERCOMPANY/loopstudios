@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="./js/index.js" defer></script>
+    
+    <title>Loop Studios</title>
+  </head>
+  <body>
+    <section id="hero">
+      <!--Hero container-->
+      <div class="max-w-6xl mx-auto px-8 py-12">
+        <!--Nav container-->
+        <nav class="flex items-center justify-between text-white">
+          <!--Icon-->
+          <img src="./images/logo.svg" alt="loop logo">
+
+          <!--Nav items-->
+          <div class="hidden md:flex items-center space-x-8 font-alata">
+            <!--Item 1-->
+            <a href="#" class="group duration-200">
+              <p class=" font-bold group-hover:-translate-y-0.5 duration-200">About</p>
+              <div class="duration-200 group-hover:border-b-2 group-hover:border-b-blue-50"></div>
+            </a>
+
+            <!--Item 2-->
+            <a href="#" class="group duration-200">
+              <p class="font-bold group-hover:-translate-y-0.5 duration-200">Careers</p>
+              <div class="duration-200 group-hover:border-b-2 group-hover:border-b-blue-50"></div>
+            </a>
+
+            <!--Item 3-->
+            <a href="#" class="group duration-200">
+              <p class="font-bold group-hover:-translate-y-0.5 duration-200">Events</p>
+              <div class=" duration-200  group-hover:border-b-2 group-hover:border-b-blue-50"></div>
+            </a>
+
+            <!--Item 4-->
+            <a href="#" class="group duration-200">
+              <p class="font-bold group-hover:-translate-y-0.5 duration-200">Products</p>
+              <div class="duration-200  group-hover:border-b-2 group-hover:border-b-blue-50"></div>
+            </a>
+
+            <!--Item 5-->
+            <a href="#" class="group">
+              <p class="font-bold group-hover:-translate-y-0.5 duration-200">Support</p>
+              <div class=" duration-200 group-hover:border-b-2 group-hover:border-b-blue-50"></div>
+            </a>
+          </div>
+
+          <!--hamburguer menu-->
+
+         <!--  <div class="md:hidden">
+            <button id="menu-btn" type="button" class=" open z-40 block hamburguer md:hidden focus:outline-none">
+              <span class="hamburguer-top"></span>
+              <span class="hamburguer-middle"></span>
+              <span class="hamburguer-bottom"></span>
+            </button>
+          </div> -->
+
+          <div class="md:hidden">
+            <button id="menu-btn" type="button" class="block z-40 hamburguer md:hidden focus:outline-none">
+              <span class="hamburguer-top"></span>
+              <span class="hamburguer-middle"></span>
+              <span class="hamburguer-bottom"></span>
+            </button>
+          </div>
+
+        </nav>
+
+        <!--Mobile menu-->
+
+        <div id="menu" class="absolute top-0 bottom-0 left-0 hidden flex-col self-end  w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black">
+          <a href="#" class="hover:text-pink-500">About</a>
+          <a href="#" class="hover:text-pink-500">Careers</a>
+          <a href="#" class="hover:text-pink-500">Events</a>
+          <a href="#" class="hover:text-pink-500">Products</a>
+          <a href="#" class="hover:text-pink-500">Support</a>
+        </div>
+
+        <!--Hero content text-->
+        <div class="max-w-lg  mt-32 font-light md:m-32 mb-32 md:mx-0 p-6 font-sans uppercase text-3xl md:text-6xl md:p-10 text-white border-white border-2">
+          impressive experiences that deliver
+        </div>
+
+
+      </div>
+    </section>
+
+    <section id="features">
+      <!--Features container-->
+      <div class="relative max-w-6xl mx-auto my-32 px-4 md:px-0 flex flex-col md:flex-row space-y-8">
+        <!--Feature img-->
+        <img src="./images/desktop/image-interactive.jpg" alt="interactive VR">
+
+        <!--text container-->
+        <div class="max-w-2xl top-40 bg-white  md:absolute md:-right-20 md:py-20 md:pl-20">
+          <h3 class="max-w-lg mb-8 mx-auto text-center font-light md:text-left text-4xl md:text-5xl font-sans uppercase ">The leader in interactive VR</h3>
+          <p class=" max-w-md md:max-w-sm font-light mx-auto md:mx-0 text-justify">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="creations">
+      <!--Creations container-->
+      <div class="max-w-6xl mx-auto my-32 px-4 md:px-0">
+        <!--Hero container-->
+        <div class="flex flex-col items-center justify-center md:justify-between mb-20 md:flex-row">
+          <h3 class="uppercase font-light text-4xl md:text-5xl">our creations</h3>
+          <button class="btn hidden md:block ">see all</button>
+        </div>
+
+        <!--Card container 1-->
+        <div class="card-container mb-8">
+
+          <!--Card content 1-->
+          <div class="card-content relative group">
+            <!--Image content Desktop-->
+            <img src="./images/desktop/image-deep-earth.jpg" alt="Arcade desktop" class="image-card hidden md:block">
+
+             <!--Image content Mobile-->
+             <img src="./images/mobile/image-deep-earth.jpg" alt="Arcade mobile" class="image-card md:hidden">
+
+            <!--White effect-->
+
+            <div class="card-effect"></div> 
+
+            <!--Text content-->
+            <h5 class="card-text ">deep earth<h5/>
+
+          </div>
+
+          <!--Card content 2-->
+          <div class="card-content relative group">
+            <!--Image content Desktop-->
+            <img src="./images/desktop/image-night-arcade.jpg" alt="Arcade desktop" class="image-card hidden md:block">
+
+             <!--Image content Mobile-->
+             <img src="./images/mobile/image-night-arcade.jpg" alt="Arcade mobile" class="image-card md:hidden">
+
+            <!--White effect-->
+
+            <div class="card-effect"></div> 
+
+            <!--Text content-->
+            <h5 class="card-text ">Night Arcade<h5/>
+
+          </div>
+
+          <!--Card content 3-->
+          <div class="card-content relative group">
+            <!--Image content Desktop-->
+            <img src="./images/desktop/image-soccer-team.jpg" alt="Arcade desktop" class="image-card hidden md:block">
+
+             <!--Image content Mobile-->
+             <img src="./images/mobile/image-soccer-team.jpg" alt="Arcade mobile" class="image-card md:hidden">
+
+            <!--White effect-->
+
+            <div class="card-effect"></div> 
+
+            <!--Text content-->
+            <h5 class="card-text ">Soccer Team VR<h5/>
+
+          </div>
+
+          <!--Card content 4-->
+          <div class="card-content relative group">
+            <!--Image content Desktop-->
+            <img src="./images/desktop/image-grid.jpg" alt="Arcade desktop" class="image-card hidden md:block">
+
+             <!--Image content Mobile-->
+             <img src="./images/mobile/image-grid.jpg" alt="Arcade mobile" class="image-card md:hidden">
+
+            <!--White effect-->
+
+            <div class="card-effect"></div> 
+
+            <!--Text content-->
+            <h5 class="card-text ">The Grid<h5/>
+
+          </div>
+
+        
+          
+        </div>
+
+        <!--Card container 2-->
+
+        <div class="card-container mb-10">
+
+          <!--Card content 1-->
+          <div class="card-content relative group">
+            <!--Image content Desktop-->
+            <img src="./images/desktop/image-from-above.jpg" alt="Arcade desktop" class="image-card hidden md:block">
+
+             <!--Image content Mobile-->
+             <img src="./images/mobile/image-from-above.jpg" alt="Arcade mobile" class="image-card md:hidden">
+
+            <!--White effect-->
+
+            <div class="card-effect"></div> 
+
+            <!--Text content-->
+            <h5 class="card-text ">From Up Above VR<h5/>
+
+          </div>
+
+          <!--Card content 2-->
+          <div class="card-content relative group">
+            <!--Image content Desktop-->
+            <img src="./images/desktop/image-pocket-borealis.jpg" alt="Arcade desktop" class="image-card hidden md:block">
+
+             <!--Image content Mobile-->
+             <img src="./images/mobile/image-pocket-borealis.jpg" alt="Arcade mobile" class="image-card md:hidden">
+
+            <!--White effect-->
+
+            <div class="card-effect"></div> 
+
+            <!--Text content-->
+            <h5 class="card-text ">pocket borealis<h5/>
+
+          </div>
+
+          <!--Card content 3-->
+          <div class="card-content relative group">
+            <!--Image content Desktop-->
+            <img src="./images/desktop/image-curiosity.jpg" alt="Arcade desktop" class="image-card hidden md:block">
+
+             <!--Image content Mobile-->
+             <img src="./images/mobile/image-curiosity.jpg"" alt="Arcade mobile" class="image-card md:hidden">
+
+            <!--White effect-->
+
+            <div class="card-effect"></div> 
+
+            <!--Text content-->
+            <h5 class="card-text ">the Curiosity<h5/>
+
+          </div>
+
+          <!--Card content 4-->
+          <div class="card-content relative group">
+            <!--Image content Desktop-->
+            <img src="./images/desktop/image-fisheye.jpg" alt="Arcade desktop" class="image-card hidden md:block">
+
+             <!--Image content Mobile-->
+             <img src="./images/mobile/image-fisheye.jpg" alt="Arcade mobile" class="image-card md:hidden">
+
+            <!--White effect-->
+
+            <div class="card-effect"></div> 
+
+            <!--Text content-->
+            <h5 class="card-text ">make it fisheye<h5/>
+
+          </div>
+
+        
+          
+        </div>
+
+        <button class="btn w-full md:hidden">see all</button>
+
+      </div>
+
+    </section>
+
+
+    <!--Footer container-->
+    <footer class="bg-black text-white ">
+
+      <!--Flex container-->
+
+      <div class="max-w-6xl mx-auto pt-12 pb-20 flex flex-col space-y-10 md:space-y-0 md:flex-row items-center justify-center md:justify-between">
+        <!--Left content-->
+
+        <div class="flex flex-col space-y-4 items-center md:items-start justify-center ">
+          <!--Logo content-->
+          <h3 class="font-bold text-3xl md:ml-4">loopstudios</h3>
+          <!--links content-->
+          <div class="flex flex-col space-y-6 md:space-y-0 md:flex-row md:space-x-4 md:ml-4 text-md">
+            <!--Item 1 -->
+            <a href="#" class="group">
+              <p class="font-medium group-hover:-translate-y-0.5">About</p>
+              <div class="mx-2 group-hover:border-b group-hover:border-b-blue-50 duration-200"></div>
+            </a>
+
+            <!--Item 2 -->
+            <a href="#" class="group">
+              <p class=" font-medium group-hover:-translate-y-0.5">Careers</p>
+              <div class="mx-2 group-hover:border-b group-hover:border-b-blue-50 duration-200"></div>
+            </a>
+
+            <!--Item 3 -->
+            <a href="#" class="group">
+              <p class=" font-medium group-hover:-translate-y-0.5">Events</p>
+              <div class="mx-2 group-hover:border-b group-hover:border-b-blue-50 duration-200"></div>
+            </a>
+
+            <!--Item 4 -->
+            <a href="#" class="group">
+              <p class=" font-medium group-hover:-translate-y-0.5">Products</p>
+              <div class="mx-2 group-hover:border-b group-hover:border-b-blue-50 duration-200"></div>
+            </a>
+
+            <!--Item 5 -->
+            <a href="#" class="group">
+              <p class=" font-medium group-hover:-translate-y-0.5">Support</p>
+              <div class="mx-2 group-hover:border-b group-hover:border-b-blue-50 duration-200"></div>
+            </a>
+          </div>
+
+        </div>
+
+        <!--Right content-->
+
+        <div class="flex flex-col space-y-4 items-center md:items-start justify-center">
+          <!--Social media container-->
+          <div class="flex items-center justify-center space-x-4">
+
+            <!--Social icon 1 -->
+            <a href="#" class="group h-8">
+              <img src="./images/icon-facebook.svg" alt="" class="h-6 group-hover:scale-105 duration-200">
+            </a>
+
+            <!--Social icon 2 -->
+            <a href="#" class="group h-8">
+              <img src="./images/icon-twitter.svg" alt="" class="h-6 group-hover:scale-105 duration-200">
+            </a>
+
+            <!--Social icon 1 -->
+            <a href="#" class="group h-8">
+              <img src="./images/icon-pinterest.svg" alt="" class="h-6 group-hover:scale-105 duration-200">
+            </a>
+
+            <!--Social icon 1 -->
+            <a href="#" class="group h-8">
+              <img src="./images/icon-instagram.svg" alt="" class="h-6 group-hover:scale-105 duration-200">
+            </a>
+          </div>
+
+          <!--Rights container-->
+          <p class="font-light text-md text-gray-500" >&copy; 2022 Loopstudios. All Rights Reserved</p>
+        
+        </div>
+
+      </div>
+
+      
+
+    </footer>
+
+
+
+
+  </body>
+</html>
